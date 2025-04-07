@@ -2,6 +2,10 @@
 
 Este projeto tem como objetivo a criação de um sistema multiagente utilizando o framework CrewAI para gerar artigos de no mínimo 300 palavras, a partir de um tema específico, com base em informações obtidas da API da Wikipedia.
 
+> ℹ️ Projeto desenvolvido como parte do **teste prático** para o processo seletivo do Instituto de Computação – ITEC/FURG, referente ao **Edital nº 026/2025**, destinado à vaga de **Iniciação Científica**.
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 
 - Python
@@ -34,37 +38,6 @@ Este projeto tem como objetivo a criação de um sistema multiagente utilizando 
 - requirements.txt
 - readme.md
 - LICENSE (vou usar a MIT do github)
-
-tools/ – Ferramentas personalizadas
-
-wikipedia_tool.py – Tool que faz o request na API da Wikipedia
-
-crew/ – Configuração da tripulação (crew)
-
-crew_setup.py – Criação e organização dos agentes e ferramentas
-
-models/ – Modelos Pydantic
-
-article_model.py – Modelo para validar o artigo gerado
-
-main.py – Script principal para executar a geração do artigo
-
-api/ – API para expor o sistema via Flask
-
-api.py – Código da API com os endpoints
-
-tests/ – Testes automatizados (opcional)
-
-.env.example – Exemplo de arquivo com variáveis de ambiente (ex: chave da API Gemini)
-
-requirements.txt – Arquivo com as dependências do projeto
-
-README.md – Documentação explicando como rodar o projeto
-
-LICENSE – Licença de uso (opcional)
-
-
-
 
 ### 2. Criar os agentes
 - [ ] Estudar a documentação do CrewAI para aperfeiçoamento.
