@@ -20,11 +20,9 @@ Este projeto tem como objetivo a criação de um sistema multiagente utilizando 
 
 ## 📋 Tarefas do Projeto
 
-## 1. – Estruturar o projeto.
+## 1. - Estrutura do projeto
 - Ir atualizando conforme update
 - [ ] Versão final do projeto
-
-## 1.1. - Atual estrutura do projeto
 ```
 CrewAI_ITec/
 │ ── app/ 
@@ -39,6 +37,7 @@ CrewAI_ITec/
 │ │ │ └── __init__.py
 │ │ │ └── api_wkp.py
 │ │ └── __init__.py
+│ │ └── main.py
 │ ├── api/
 │ │ # Interface usando Flask
 | │ └── __init__.py
@@ -60,18 +59,18 @@ CrewAI_ITec/
 │ └── LICENSE 
 ```
 
-### 2. Criar os agentes
+### 2. Criar uma ferramenta personalizada
+- [ ] Fazer uma **tool personalizada** xque:
+    - [ ] Acesse a API da Wikipedia.
+    - [ ] Realizar o request.
+    - [ ] Fazer o return dos dados para o agente.
+
+### 3. Criar os agentes
 - [ ] Estudar a documentação do CrewAI para aperfeiçoamento.
 - [ ] Fazer pelo menos **2 agentes** com CrewAI: 
     - (ideias de agentes foram o search e write)
     - [ ] Um agente que **pesquisa** informações na Wikipedia.
     - [ ] Um agente que **escreve** o artigo com base nas informações.
-
-### 3. Criar uma ferramenta personalizada
-- [ ] Fazer uma **tool personalizada** que:
-    - [ ] Acesse a API da Wikipedia.
-    - [ ] Realizar o request.
-    - [ ] Fazer o return dos dados para o agente.
 
 ### 4. Gerar o artigo final
 - [ ] O sistema precisa gerar um **artigo com no mínimo 300 palavras**.
@@ -102,6 +101,27 @@ CrewAI_ITec/
 - [CrewAI Documentation](https://docs.crewai.com/introduction)
 - [CrewAI Tools](https://docs.crewai.com/concepts/tools)
 - [Curso da DeepLearning.AI sobre Sistemas Multiagente](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
+
+---
+
+## 🧪 Como Rodar o Projeto
+
+- Siga os passos abaixo para configurar e executar o projeto localmente:
+1. **Crie uma Virtual Environment**
+    - Para garantir que as dependências do projeto fiquem isoladas, crie uma virtualenv.
+    > cd c:\
+
+    > python -m venv CreAI_ITec
+2. **Ative a Virtual Environment**
+    - Ative a virtualenv criada:
+    > c:\CrewAi_ITec\Scripts\activate
+3. **Instale as Dependências**
+   - Com a virtualenv ativa, instale os pacotes listados no arquivo `requirements.txt`:
+   > pip install -r requirements.txt
+4. **Execute o Projeto**
+    - Por fim, rode o arquivo principal:
+    > python app/main.py
+
 
 ---
 
