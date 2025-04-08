@@ -25,19 +25,40 @@ Este projeto tem como objetivo a criação de um sistema multiagente utilizando 
 - [ ] Versão final do projeto
 
 ## 1.1. - Atual estrutura do projeto
-- app/
-    - agents/
-        - *search_agent.py*
-        - *writer_agent.py*
-    - tools/
-        - *wikipedia_tool.py*
-    - *main.py*
-- api/
-    - *api.py*
-- .env
-- requirements.txt
-- readme.md
-- LICENSE (vou usar a MIT do github)
+```
+CrewAI_ITec/
+│ ── app/ 
+│ │ └── agents/
+│ │ │   # Modela a resposta do tool
+│ │ │ └── __init__.py
+│ │ │     # Modulariza a pasta para permitir import
+│ │ │ └── api_search.py
+│ │ │ └── api_write.py
+│ │ └── tools/
+│ │ |   # Gerencia e faz a comunicação com a API
+│ │ │ └── __init__.py
+│ │ │ └── api_wkp.py
+│ │ └── __init__.py
+│ ├── api/
+│ │ # Interface usando Flask
+| │ └── __init__.py
+│ │ └── api.py
+│ │     # Onde inicializa o flask e as rotas
+│ │ └── routes.py
+│ │     # Centraliza os Endpoints
+│ │ └── controller.py
+│ │     # Faz a conexão com o crew
+│ └── main.py
+│ └── .env 
+│     # Armazena as variaveis de ambiente
+│     # Normalmente fica oculto pelo gitgnore
+│     # mas como o intuito é testar o código
+│     # vai ficar livre
+│ └── requirements.txt
+│     # Lista de dependências
+│ └── README.md
+│ └── LICENSE 
+```
 
 ### 2. Criar os agentes
 - [ ] Estudar a documentação do CrewAI para aperfeiçoamento.
