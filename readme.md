@@ -60,17 +60,17 @@ CrewAI_ITec/
 ```
 
 ### 2. Criar uma ferramenta personalizada
-- [ ] Fazer uma **tool personalizada** xque:
-    - [ ] Acesse a API da Wikipedia.
-    - [ ] Realizar o request.
-    - [ ] Fazer o return dos dados para o agente.
+- [x] Fazer uma **tool personalizada** xque:
+    - [x] Acesse a API da Wikipedia.
+    - [x] Realizar o request.
+    - [x] Fazer o return dos dados para o agente.
 
 ### 3. Criar os agentes
-- [ ] Estudar a documentação do CrewAI para aperfeiçoamento.
-- [ ] Fazer pelo menos **2 agentes** com CrewAI: 
+- [x] Estudar a documentação do CrewAI para aperfeiçoamento.
+- [x] Fazer pelo menos **2 agentes** com CrewAI: 
     - (ideias de agentes foram o search e write)
-    - [ ] Um agente que **pesquisa** informações na Wikipedia.
-    - [ ] Um agente que **escreve** o artigo com base nas informações.
+    - [x] Um agente que **pesquisa** informações na Wikipedia.
+    - [x] Um agente que **escreve** o artigo com base nas informações.
 
 ### 4. Gerar o artigo final
 - [ ] O sistema precisa gerar um **artigo com no mínimo 300 palavras**.
@@ -93,14 +93,6 @@ CrewAI_ITec/
 
 ### 7. Concluir o projeto
 - [ ] Subir o projeto em um repositório **público** e fazer a entrevista apresentando o projeto.
-
----
-
-## 📖 Fontes para Estudos
-
-- [CrewAI Documentation](https://docs.crewai.com/introduction)
-- [CrewAI Tools](https://docs.crewai.com/concepts/tools)
-- [Curso da DeepLearning.AI sobre Sistemas Multiagente](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/)
 
 ---
 
@@ -147,3 +139,12 @@ CrewAI_ITec/
 - [x] Configurar o Gemini e como utiliza-lo melhor.
 - [x] O CrewAI não precisa de APY_KEY.
 - [x] A API da wikipedia não precisa de Cadastro.
+- [ ] Definir a engenharia de prompt adequada
+    - Atualmente, pensei em:
+    ```
+        Introdução: "Você está criando um arigo informativo para web."
+        Trabalho: "Escreva um artigo com, no minimo 300 palavras sobre o tema escolhido, usando linguagem simples de fácil entendimento."
+        Formatação: "Formate o texto em parágrafos, começando por uma introdução clara, desenvolvimento com fatos e uma conclusão interessante."
+        Fontes: "Utilize apenas os dados extraídos da Wikipedia. Não sendo permitido criar fatos que não foram falados lá."
+        Estilo de escrita: "Use um tom informativo, amigável e envolvente. Evite palavras técnicas."
+    ```
