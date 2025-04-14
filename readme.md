@@ -24,39 +24,10 @@ Este projeto tem como objetivo a criação de um sistema multiagente utilizando 
 - Ir atualizando conforme update
 - [ ] Versão final do projeto
 ```
+# tem que alterar pois mudei a forma de criação do crew
 CrewAI_ITec/
 │ ── app/ 
 │ │ └── agents/
-│ │ │   # Modela a resposta do tool
-│ │ │ └── __init__.py
-│ │ │     # Modulariza a pasta para permitir import
-│ │ │ └── api_search.py
-│ │ │ └── api_write.py
-│ │ └── tools/
-│ │ |   # Gerencia e faz a comunicação com a API
-│ │ │ └── __init__.py
-│ │ │ └── api_wkp.py
-│ │ └── __init__.py
-│ │ └── main.py
-│ ├── api/
-│ │ # Interface usando Flask
-| │ └── __init__.py
-│ │ └── api.py
-│ │     # Onde inicializa o flask e as rotas
-│ │ └── routes.py
-│ │     # Centraliza os Endpoints
-│ │ └── controller.py
-│ │     # Faz a conexão com o crew
-│ └── main.py
-│ └── .env 
-│     # Armazena as variaveis de ambiente
-│     # Normalmente fica oculto pelo gitgnore
-│     # mas como o intuito é testar o código
-│     # vai ficar livre
-│ └── requirements.txt
-│     # Lista de dependências
-│ └── README.md
-│ └── LICENSE 
 ```
 
 ### 2. Criar uma ferramenta personalizada
@@ -138,4 +109,10 @@ CrewAI_ITec/
         - Criando a estrutura do projeto
             > crewai create crew <nome>
         - Vai ser necessário informar a LLM e a API_KEY
-        
+    - Conteúdo aprendido nesses sites:
+        - [Instalação do CrewAI](https://docs.crewai.com/installation)
+        - [Primeiros passos](https://docs.crewai.com/quickstart)
+        - [Usando o arquivo .yaml para as tasks](https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended)
+        - [Usando o arquivo .yaml para os agentes](https://docs.crewai.com/concepts/agents#yaml-configuration-recommended)
+    - <Desabafo> - Caso alguem esteja lendo essa parte. Programação é um negócio daora né? O programa não rodava e puxava o LLM da OpenAi mesmo eu configurando para gemini. deixei o final de semana parado, e voltei segunda, refiz o código, e tcharam, funcionou! 
+    - (づ￣ 3￣)づ

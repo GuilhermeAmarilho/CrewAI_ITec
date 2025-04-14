@@ -1,12 +1,16 @@
-# from crewai import BaseTool
 from crewai.tools import BaseTool
+from typing import Type
+from pydantic import BaseModel, Field
 import requests
 
+class WikiSearchInput(BaseModel):
+    topic: str = Field(..., description="Artigo que vai ser pesquisado na Wikipedia.")
+
 class WikiSearch(BaseTool):
-    # Por causa do pydantic, tem que colocar o tipo de variavel como no C
-    name: str = "Wiki Search"  
-    description: str = "Busca um artigo na Wikipedia e retorna o conteúdo sobre ele"  
-    # Ajuda o llm a entender o contexto da aplicação
+    name: str = "Wiki Search"
+    description: str = "Busca um artigo na Wikipedia e retorna o conteúdo sobre ele."
+    args_schema: Type[BaseModel] = WikiSearchInput
+
     def _run(self, topic: str) -> str:
         url = "https://pt.wikipedia.org/w/api.php"
         params = {

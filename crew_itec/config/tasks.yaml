@@ -1,0 +1,13 @@
+reader_task:
+  description: >
+    Pesquise informações relevantes e atualizadas sobre {topic} na Wikipedia. Identifique os principais conceitos, Curiosidades, Aplicações e Conteúdo relacionado. Não invente dados nem use fontes externas.
+  expected_output: >
+    Uma lista com 10 pontos informativos sobre {topic}, cada um com 1 a 3 frases, explicando o tema.
+  agent: reader
+
+writer_task:
+  description: >
+    Com base na lista de tópicos fornecida, escreva um artigo com mais de 300 palavras sobre o tema {topic}. Desenvolva cada item da lista em parágrafos bem escritos, mantendo uma estrutura clara com introdução, desenvolvimento e conclusão. Alem de criar um título para esse artigo. Não utilize elementos do Markdown.
+  expected_output: >
+    Um artigo textual corrido, com linguagem simples e acessível. Use os tópicos como base para os parágrafos do corpo do texto. A introdução deve despertar o interesse do leitor; o desenvolvimento deve explorar cada ponto; a conclusão deve resumir o conteúdo. Não adicione informações que não estejam na lista. O resultado deve ser texto puro.
+  agent: writer
