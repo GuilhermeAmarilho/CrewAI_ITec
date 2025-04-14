@@ -117,34 +117,25 @@ CrewAI_ITec/
 
 ---
 
-## Trabalho "offtopic".
-### Serve apenas para registrar o que fiz, no fim, irei apagar.
-- [x] Como vou usar LLM neste projeto:
-    - Exemplo de código que desenvolvi para relembrar
-    ```
-        from crewai import Agent
-        from langchain_google_genai import ChatGoogleGenerativeAI
-
-        llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=<api>)
-
-        pesquisador = Agent(
-            role="Pesquisador da Wikipedia",
-            goal="Pesquisar sobre o tema solicitado",
-            backstory="É especialista em encontrar informações confiáveis e rápidas.",
-            llm=llm,
-            tools=[<tool>],
-            verbose=True
-        )
-    ```
-- [x] Configurar o Gemini e como utiliza-lo melhor.
-- [x] O CrewAI não precisa de APY_KEY.
-- [x] A API da wikipedia não precisa de Cadastro.
-- [ ] Definir a engenharia de prompt adequada
-    - Atualmente, pensei em:
-    ```
-        Introdução: "Você está criando um arigo informativo para web."
-        Trabalho: "Escreva um artigo com, no minimo 300 palavras sobre o tema escolhido, usando linguagem simples de fácil entendimento."
-        Formatação: "Formate o texto em parágrafos, começando por uma introdução clara, desenvolvimento com fatos e uma conclusão interessante."
-        Fontes: "Utilize apenas os dados extraídos da Wikipedia. Não sendo permitido criar fatos que não foram falados lá."
-        Estilo de escrita: "Use um tom informativo, amigável e envolvente. Evite palavras técnicas."
-    ```
+## Documentando o que fiz
+- Engenharia de prompt - Elementos de uma boa query:
+    - Instrução:
+        - uma tarefa ou instrução específica que você deseja que o modelo execute
+    - Contexto:
+        - pode envolver informações externas ou contexto adicional que pode direcionar o modelo para melhores respostas
+    - Dados de entrada:
+        - é a entrada ou pergunta para a qual estamos interessados em encontrar uma resposta
+    - Indicador de saída:
+        - indica o tipo ou formato da saída.
+    - Conteúdo aprendido desse [site](https://www.promptingguide.ai/pt).
+- CrewAI
+    - Primeiro, eu criei um projeto manualmente, mas estava sempre usando a LLM da OpenAI, mesmo com o .env configurado para Gemini. Com isso, dei um passo para tras e fui passo a passo seguindo a documentação.
+    - QuickStart
+        - Baixando UV
+            > powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+        - Instalando o CrewAI
+            > uv tool install crewai
+        - Criando a estrutura do projeto
+            > crewai create crew <nome>
+        - Vai ser necessário informar a LLM e a API_KEY
+        

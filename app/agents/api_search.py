@@ -5,7 +5,7 @@ from app.tools.api_wkp import WikiSearch
 # Enquanto a tool é como a lupa que serve para enxergar, esse agente é a pessoa que usa a lupa para ler
 def search_Agent():
     return Agent(
-        role="Leitor",
+        role="Leitor de artigos",
         goal="Colete informações relevantes na Wikipedia sobre o tema.",
         backstory="Você é o responsável por buscar informações confiáveis diretamente da Wikipedia. Sua tarefa é ser a principal fonte de dados brutos para a criação dos artigos. Portanto, você deve garantir que o conteúdo extraído seja fiel e relevante ao tema proposto. Você não deve recorrer a dados externos ou inventados.",
         tools=[WikiSearch()],
