@@ -44,7 +44,7 @@ CrewAI_ITec/
     - [x] Um agente que **escreve** o artigo com base nas informações.
 
 ### 4. Gerar o artigo final
-- [ ] O sistema precisa gerar um **artigo com no mínimo 300 palavras**.
+- [x] O sistema precisa gerar um **artigo com no mínimo 300 palavras**.
 - [ ] Usar o **Pydantic** para organizar os dados do artigo (ex: título, conteúdo, tema).
 
 ### 5. Criar uma API para rodar o sistema
@@ -116,3 +116,4 @@ CrewAI_ITec/
         - [Usando o arquivo .yaml para os agentes](https://docs.crewai.com/concepts/agents#yaml-configuration-recommended)
     - <Desabafo> - Caso alguem esteja lendo essa parte. Programação é um negócio daora né? O programa não rodava e puxava o LLM da OpenAi mesmo eu configurando para gemini. deixei o final de semana parado, e voltei segunda, refiz o código, e tcharam, funcionou! 
     - (づ￣ 3￣)づ
+- Pydantic

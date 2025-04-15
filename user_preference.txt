@@ -1,6 +1,0 @@
-User name is Guilherme Amarilho.
-User is building an AI agent for a projetct from university.
-User prefers technical and objective writing style.
-User prefers articles to be informative and based strictly on reliable sources like Wikipedia.
-User wants outputs to be structured with introduction, development, and conclusion.
-User prefers Brazilian Portuguese as the output language.

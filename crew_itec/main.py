@@ -1,10 +1,9 @@
-#!/usr/bin/env python
 import sys
 from crew_itec.crew import CrewItec
 
-def run(topic):
+def run():
     inputs = {
-        'topic': topic
+        'topic': 'Teclado gamer com led'
     }    
     try:
         CrewItec().crew().kickoff(inputs=inputs)        
