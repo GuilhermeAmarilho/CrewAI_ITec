@@ -20,50 +20,42 @@ Este projeto tem como objetivo a criação de um sistema multiagente utilizando 
 
 ## 📋 Tarefas do Projeto
 
-## 1. - Estrutura do projeto
-- Ir atualizando conforme update
-- [ ] Versão final do projeto
-```
-# tem que alterar pois mudei a forma de criação do crew
-CrewAI_ITec/
-│ ── app/ 
-│ │ └── agents/
-```
-
-### 2. Criar uma ferramenta personalizada
+### 1. Criar uma ferramenta personalizada
 - [x] Fazer uma **tool personalizada** xque:
     - [x] Acesse a API da Wikipedia.
     - [x] Realizar o request.
     - [x] Fazer o return dos dados para o agente.
 
-### 3. Criar os agentes
+### 2. Criar os agentes
 - [x] Estudar a documentação do CrewAI para aperfeiçoamento.
 - [x] Fazer pelo menos **2 agentes** com CrewAI: 
     - (ideias de agentes foram o search e write)
     - [x] Um agente que **pesquisa** informações na Wikipedia.
     - [x] Um agente que **escreve** o artigo com base nas informações.
 
-### 4. Gerar o artigo final
+### 3. Gerar o artigo final
 - [x] O sistema precisa gerar um **artigo com no mínimo 300 palavras**.
-- [ ] Usar o **Pydantic** para organizar os dados do artigo (ex: título, conteúdo, tema).
+- [x] Usar o **Pydantic** para organizar os dados do artigo (ex: título, conteúdo, tema).
 
 ### 5. Criar uma API para rodar o sistema
-- [ ] Fazer uma API com o **Flask**.
-    - [ ] Criar um endpoint onde para mandar o tema e recebe o artigo pronto.
+- [x] Fazer uma API com o **FastAPI**.
+    - [x] Criar um endpoint onde para mandar o tema e recebe o artigo pronto.
     - [ ] Pegar o artigo em JSON e transformar para artigo textual.
+    > Porém, aqui deu erro e acabei não finalizando
 
 ### 6. Organizar e documentar o projeto
-- [ ] Separar bem os arquivos: agentes, tools, crew, API e outros.
-- [ ] Deixar o código bem comentado para explicar como tudo funciona.
-- [ ] Complementar o **README.md** com:
-    - [ ] O que é o projeto.
-    - [ ] Como rodar.
-    - [ ] Como usar a API.
-    - [ ] Publicar o repositório no GitHub
-    - [ ] Manter o código aberto (público)
+- [x] Separar bem os arquivos: agentes, tools, crew, API e outros.
+- [x] Deixar o código bem comentado para explicar como tudo funciona.
+- [x] Complementar o **README.md** com:
+    - [x] O que é o projeto.
+    - [x] Como rodar.
+    - [x] Como usar a API.
+    - [x] Publicar o repositório no GitHub
+    - [x] Manter o código aberto (público)
 
 ### 7. Concluir o projeto
 - [ ] Subir o projeto em um repositório **público** e fazer a entrevista apresentando o projeto.
+> Embora não tenha conseguido concluir a tempo, foi um ótimo aprendizado.
 
 ---
 
@@ -74,10 +66,10 @@ CrewAI_ITec/
     - Para garantir que as dependências do projeto fiquem isoladas, crie uma virtualenv.
     > cd c:\
 
-    > python -m venv CreAI_ITec
+    > python -m venv CreAI
 2. **Ative a Virtual Environment**
     - Ative a virtualenv criada:
-    > c:\CrewAi_ITec\Scripts\activate
+    > c:\CrewAi\Scripts\activate
 3. **Instale as Dependências**
    - Com a virtualenv ativa, instale os pacotes listados no arquivo `requirements.txt`:
    > pip install -r requirements.txt
@@ -116,4 +108,3 @@ CrewAI_ITec/
         - [Usando o arquivo .yaml para os agentes](https://docs.crewai.com/concepts/agents#yaml-configuration-recommended)
     - <Desabafo> - Caso alguem esteja lendo essa parte. Programação é um negócio daora né? O programa não rodava e puxava o LLM da OpenAi mesmo eu configurando para gemini. deixei o final de semana parado, e voltei segunda, refiz o código, e tcharam, funcionou! 
     - (づ￣ 3￣)づ
-- Pydantic

@@ -2,7 +2,7 @@ from crewai import Agent, Crew, Process, Task # type: ignore
 from crewai.project import CrewBase, agent, crew, task # type: ignore
 
 @CrewBase
-class CrewItec():
+class Crew():
     agents_config = 'config/agents.yaml'
     tasks_config = 'config/tasks.yaml'
     # Configura os agents usando a engenharia de prompt passada no config, tanto os agentes quanto as tasks

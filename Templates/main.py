@@ -7,7 +7,7 @@ print('\n\n\n\n\n\n\n')
 
 
 app = FastAPI(
-    title="CrewAI ITec",
+    title="CrewAI",
     version="1.0.0"
 )
 
